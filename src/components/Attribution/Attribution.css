@@ -1,0 +1,10 @@
+.attribution {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 0 1rem;
+    color: var(--dark-grayish-blue);
+    font-size: 1.4rem;
+}
+.attribution a {
+    color: hsl(228, 42%, 66%);
+}

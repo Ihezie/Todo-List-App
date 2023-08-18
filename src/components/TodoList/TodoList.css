@@ -1,0 +1,76 @@
+.todo-container {
+    background-color: white;
+    margin-top: 2rem;
+    border-radius: .6rem;
+    box-shadow: 0 1.8rem 3rem 1rem rgba(0, 0, 0, .12);
+    position: relative;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.controls {
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    color: var(--dark-grayish-blue);
+    position: relative;
+    font-size: 1.5rem;
+    border-top: .1rem solid var(--light-grayish-blue);
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+}
+
+.btn:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.dark .btn:hover {
+    color: white;
+}
+
+.filter-btn {
+    margin: 0 1rem;
+    text-transform: capitalize;
+}
+
+.current {
+    color: var(--bright-blue);
+}
+
+.no-items {
+    height: 10rem;
+    text-align: center;
+    padding-top: 4rem;
+    color: var(--dark-grayish-blue);
+}
+
+@media screen and (max-width: 620px) {
+    .filter-btns-container {
+        position: absolute;
+        background-color: white;
+        bottom: -7.5rem;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: .4rem;
+        box-shadow: 0 1rem 3rem -.2rem rgba(0, 0, 0, .12);
+    }
+
+    .dark .filter-btns-container {
+        background-color: var(--very-dark-desaturated-blue);
+    }
+}

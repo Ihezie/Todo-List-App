@@ -1,0 +1,31 @@
+.todo-form{
+    margin-top: 4rem;
+    background-color: white;
+    height: 6rem;
+    border-radius: .4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+#todo-input{
+    height: 3rem;
+    font-size: 1.8rem;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+}
+#todo-input:focus{
+    outline: none;
+}
+.dark #todo-input{
+    color: white;
+}
+.dark #todo-input::placeholder{
+    color: var(--dark-grayish-blue-dark);
+}
+
+@media screen and (max-width: 620px){
+    .todo-form{
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .12);
+    }
+}

@@ -1,0 +1,14 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+header h1{
+    letter-spacing: 1rem;
+    color: white;
+}
+.theme-toggle-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,81 @@
+.todo-list li {
+    padding: 1rem 2rem;
+    display: flex;
+    min-height: 6rem;
+    align-items: center;
+    justify-content: space-between;
+    word-break:break-all;
+}
+.todo-list > div{
+    border-bottom: .1rem solid var(--light-grayish-blue);
+}
+.todo-list> div:last-child{
+    border-bottom: none;
+}
+.dark .todo-list> div {
+    border-bottom: .2rem solid var(--very-dark-grayish-blue-dark-2);
+}
+
+.todo-list li .wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+}
+
+.content:hover {
+    cursor: pointer;
+}
+
+.delete-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    color: #494C6B;
+}
+
+.dark .delete-btn {
+    color: var(--light-grayish-blue-hover);
+}
+
+.todo-list li:hover .delete-btn {
+    display: block;
+}
+
+.completed {
+    color: var(--light-grayish-blue);
+    text-decoration: line-through;
+}
+
+.dark .completed {
+    color: var(--very-dark-grayish-blue-dark-1);
+}
+
+input[type='checkbox'] {
+    appearance: none;
+    cursor: pointer;
+    transition: none;
+}
+
+input[type='checkbox']:hover {
+    border: 1px solid transparent;
+    background: linear-gradient(white, white) content-box, var(--check-background) border-box;
+}
+
+.dark input[type='checkbox']:hover {
+    background: linear-gradient(hsl(235, 24%, 19%), hsl(235, 24%, 19%)) content-box, var(--check-background) border-box;
+}
+
+.todo-list .wrapper [type='checkbox']:checked {
+    background: url('../../assets/images/icon-check.svg') no-repeat, var(--check-background);
+    background-position: center;
+    background-size: 60%;
+}
+
+@media screen and (max-width: 620px) {
+    .delete-btn {
+        display: block;
+        margin-left: .5rem;
+    }
+}
