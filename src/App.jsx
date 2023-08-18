@@ -7,18 +7,18 @@ import DataProvider from "./DataContext";
 function App() {
   const { isDark } = useTheme();
   return (
-    <section id="app" className={isDark ? "dark-bg" : ""}>
+    <main id="app" className={isDark ? "dark-bg" : ""}>
       <div id="banner"></div>
-      <main className="container">
+      <section className="container">
         <Header />
         <DataProvider>
           <Form />
           <TodoList />
         </DataProvider>
-      </main>
-      <p className="dnd-notice">Drag and drop to reorder list</p>
+      </section>
+      <article className="dnd-notice">Drag and drop to reorder list</article>
       <Attribution/>
-    </section>
+    </main>
   );
 }
 

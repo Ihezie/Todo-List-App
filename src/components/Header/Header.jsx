@@ -19,7 +19,6 @@ const Header = () => {
       <audio
         ref={audioRef}
         src={lightSwitchAudio}
-        type="audio/mp3"
       ></audio>
       <button
         className="theme-toggle-btn"
