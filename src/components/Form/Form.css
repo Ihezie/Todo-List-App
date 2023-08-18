@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     padding: 0 2rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .12);
 }
 #todo-input{
     height: 3rem;
@@ -22,10 +23,4 @@
 }
 .dark #todo-input::placeholder{
     color: var(--dark-grayish-blue-dark);
-}
-
-@media screen and (max-width: 620px){
-    .todo-form{
-        box-shadow: 0 1rem 3rem rgba(0, 0, 0, .12);
-    }
 }
