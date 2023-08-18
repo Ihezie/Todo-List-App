@@ -36,7 +36,7 @@ const Form = () => {
           setUserInput(e.target.value);
         }}
         id="todo-input"
-        placeholder="Destroy a new todo..."
+        placeholder="Create a new todo..."
       />
     </form>
   );
